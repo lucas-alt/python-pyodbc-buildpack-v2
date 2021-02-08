@@ -3,6 +3,10 @@
 
 export ODBCSYSINI=${HOME}/.apt/usr/lib/odbc/conf/
 
+export INFORMIXDIR=/app/venv/Lib/site-packages/onedb-odbc-driver
+
+export LD_LIBRARY_PATH=${INFORMIXDIR}/lib:${INFORMIXDIR}/lib/esql:${INFORMIXDIR}/lib/cli
+
 mkdir -p /etc
 
 echo "[ODBC Driver 17 for SQL Server]
